@@ -1,0 +1,11 @@
+{
+  "name": "card-keeper",
+  "productionName": "CardKeeper",
+  "description": "An application to manage MTG card collections",
+  "version": "0.0.0",
+  "repository": {},
+  "dependencies": {
+    "electron-is-dev": "^0.1.2"
+  },
+  "author": "Matt Fetterman <navx2810@gmail.com>"
+}

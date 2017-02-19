@@ -1,0 +1,21 @@
+
+path: "/"
+
+modals:
+    route: ""
+    data:
+
+messages: []
+
+list:
+    cards: []
+
+file:
+    name:
+    path:
+
+autosave:
+    time: 1
+
+font:
+    size: 12

@@ -19,7 +19,7 @@ Alternatively, if you have another package manager, like [yarn](https://yarnpkg.
 ```
 
 ## Commands
-You can view the commands in the (package.json)[./package.json] file
+You can view the commands in the [package.json](./package.json) file
 
 <dl>
     <dt>dev</dt>

@@ -31,3 +31,8 @@ You can view the commands in the [package.json](./package.json) file
 <dt>dist | dist[win:mac:linux]</dt>
 <dd>Bundles the application into the dist directory under app</dd>
 </dl>
+
+## Version / Release Information
+I plan to keep the [milestones](https://github.com/navx2810/card-keeper/milestones) section up-to-date with features and plans for each version.
+
+I highly recommend checking out the [issues](https://github.com/navx2810/card-keeper/issues) section to comment or post on any problems, feature requests or ideas you think should be added. 

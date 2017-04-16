@@ -1,0 +1,162 @@
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by anonymous (http://jsbin.com/gimojayutu/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<style id="jsbin-css">
+*
+  padding 0
+  margin 0
+  font-family "Helvetica"
+
+.card
+  color hsl(200 5 30)
+  background #fff
+  display flex
+  flex-direction column
+  width fit-content
+  max-width 25em
+  .top
+    font-weight 600
+    flex 0 0 auto
+    display flex
+    justify-content space-between
+    p
+      padding .25em .5em
+    > div
+      display flex
+    .fill
+      flex 1 1 auto
+  .bottom
+    flex 1 1 auto
+    padding 1em
+    h3
+      font-weight 800
+    h4
+      color hsl(200 10 50)
+      margin-left 1em
+.count
+  cursor pointer
+  padding 0 .25em
+  background linear-gradient(-45deg, #444, #888)
+  color white
+.foil
+  background linear-gradient(45deg, hsl(100 20 60), hsl(200 20 60), hsl(250 20 60), hsl(300 20 60), hsl(400 20 60) )
+
+.common
+  .fill
+    border-top 4px solid #121212
+  .rarity
+    background #121212
+    color #fff
+
+.uncommon
+  .fill
+    border-top 4px solid silver
+  .rarity
+    background silver
+
+.rare
+  .fill
+    border-top 4px solid gold
+  .rarity
+    background gold
+
+.mythic
+  .fill
+    border-top 4px solid orange
+  .rarity
+    background orange
+
+</style>
+<div class="card">  
+  <div class="top common">
+    <p class="rarity">common</p>
+    
+    <div class="fill"></div>
+    
+    <div>
+      <div title="Normal card count." class="count">
+        <p>2</p>
+      </div>
+      <div title="Foil card count." class="count foil">
+        <p>1</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bottom">
+    <h3>Some long-ass fucking card name</h3>
+    <h4>Some old set.</h4>
+  </div>
+</div>
+
+<div class="card">  
+  <div class="top uncommon">
+    <p class="rarity">uncommon</p>
+    
+    <div class="fill"></div>
+    
+    <div>
+      <div title="Normal card count." class="count">
+        <p>4</p>
+      </div>
+      <div title="Foil card count." class="count foil">
+        <p>0</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bottom">
+    <h3>Some long-ass fucking card name</h3>
+    <h4>Some old set.</h4>
+  </div>
+</div>
+
+<div class="card">  
+  <div class="top rare">
+    <p class="rarity">rare</p>
+    
+    <div class="fill"></div>
+    
+    <div>
+      <div title="Normal card count." class="count">
+        <p>3</p>
+      </div>
+      <div title="Foil card count." class="count foil">
+        <p>0</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bottom">
+    <h3>Some long-ass fucking card name</h3>
+    <h4>Some old set.</h4>
+  </div>
+</div>
+
+<div class="card">  
+  <div class="top mythic">
+    <p class="rarity">mythic</p>
+    
+    <div class="fill"></div>
+    
+    <div>
+      <div title="Normal card count." class="count">
+        <p>2</p>
+      </div>
+      <div title="Foil card count." class="count foil">
+        <p>1</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bottom">
+    <h3>Some long-ass fucking card name</h3>
+    <h4>Some old set.</h4>
+  </div>
+</div>

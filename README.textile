@@ -1,3 +1,5 @@
+bq. master will become unstable and updated after 5/01. A new design is being implemented.
+
 h1. Card :: Keeper
 
 This application is used to keep track of your Magic: The Gathering inventory. This application offers:

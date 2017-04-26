@@ -1,4 +1,11 @@
+h2. 4/21 Updates
+
 bq. master will become unstable and updated after 5/01. A new design is being implemented.
+
+!./card-templates/card-layout.PNG(Card Layout)!
+!./card-templates/card-icons.PNG(Card Icons)!
+
+
 
 h1. Card :: Keeper
 

@@ -55,3 +55,4 @@ h3. Development
 - "Webpack":https://webpack.github.io/ := a utility for building code into a single distributable file for web.
 - "Babel":https://babeljs.io/ := a "_transpiler_" which accepts ES6 syntax and translates to ES5 code for full browser support.
 - "NodeJS":https://nodejs.org := the back-end language used by the server/electron application.
+- "POI":https://github.com/egoist/poi := a tool for rapid-web development.

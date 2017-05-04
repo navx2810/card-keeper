@@ -5,7 +5,6 @@
   "version": "0.0.0",
   "repository": {},
   "scripts": {
-    "test": "echo lol",
     "test:unit": "vbuild -c vbuild.unit.js",
     "app": "electron app/",
     "dist": "npm run dist:mac && npm run dist:win && npm run dist:linux",

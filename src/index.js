@@ -1,12 +1,19 @@
 import Vue from 'vue'
-import App from 'components/App'
-import Data from "yml-loader!lib/data.yml"
-import { Initialize } from "init"
+// @ is the path to `./src` folder
+import App from '@/components/App'
+import { BuildConfig, Init } from "@/util"
+import Model from "@/model.json"
+import Repo from "@/repo"
 
-Initialize()
+Model.config = BuildConfig
+
+Init()
 
 new Vue({
 	el: '#app',
-	data: Data,
-	render: h => h(App)
+	render: h => h(App),
+	data: Model,
+	destroyed() {
+		Repo.Close()
+	}
 })

@@ -1,0 +1,11 @@
+{
+	"config": {
+		"save": {
+			"location": null,
+			"name": "CardCollection.db"
+		}
+	},
+
+	"cards": [],
+	"route": { "path": "/" }
+}

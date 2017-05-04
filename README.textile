@@ -8,6 +8,10 @@ This application is used to keep track of your Magic: The Gathering inventory. T
 
 h2. How to use?
 
+!./docs/info-demo.png(Main Screen, Card List)!
+!./docs/main-demo.PNG(Card List, Bare)!
+!./docs/card-demo.PNG(Card Demo)!
+
 If you are building from source, you need to clone and install:
 
 bc. > git clone http://github.com/navx2810/card-keeper.git

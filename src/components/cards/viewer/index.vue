@@ -1,3 +1,8 @@
+<template>
+    <Single @updated="UpdateCard" v-if="selected" :card="selected" @added="AddCard"/>
+    <List v-else :cards="cards" @selected="ChangeSelectedCard"/>
+</template>
+
 <script>
 import Vue from 'vue'
 import Component from 'vue-class-component'
@@ -12,30 +17,21 @@ import Repo from "@/repo"
 })
 export default class extends Vue {
 
+    get selected() { return this.cards.selected }
+
     ChangeSelectedCard(card) {
         console.log(`changing selected card to ${card.name}`)
         this.cards.selected = card
     }
 
     AddCard(card) {
-        console.log("adding card")
-        console.log(card)
         Repo.AddCard(card)
         card.foils = 0
         card.normals = 0
-        this.cards.selected = card
     }
 
     UpdateCard(card) {
-        console.log("updating card")
-        console.log(card)
         Repo.UpdateCard(card)
-        this.cards.selected = card // This shouldn't need to be here, the component should handle the view status
-    }
-
-    render(h) {
-        // return h(list, { props: { cards: ctx.props.cards } })
-        return (this.cards.selected) ? <Single onUpdate={this.UpdateCard} onAdded={this.AddCard} card={this.cards.selected}/> : <List cards={this.cards} onSelected={this.ChangeSelectedCard}/>
     }
 
 }

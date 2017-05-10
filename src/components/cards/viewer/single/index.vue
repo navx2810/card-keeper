@@ -7,12 +7,12 @@
 			<h4 v-if="hasName" class="sub">{{card.setName}}</h4>
 			<template v-if="hasCards">
 				<div>
-					<p>Foils?</p>
-					<input min="0" v-model.number="foils" type="number">
+					<p>Normals?</p>
+					<input min="0" v-model.number="normals" @change="UpdateCard" type="number">
 				</div>
 				<div>
-					<p>Normals?</p>
-					<input min="0" v-model.number="normals" type="number">
+					<p>Foils?</p>
+					<input min="0" v-model.number="foils" @change="UpdateCard" type="number">
 				</div>
 			</template>
 			<div class="btn-div" v-else>
@@ -33,16 +33,19 @@ import Component from 'vue-class-component'
 })
 export default class extends Vue {
 
+	foils = this.card.foils
+	normals = this.card.normals
+
 	get imageSource() { return `http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=${this.card.mid}&type=card` }''
 
 	get hasName() { return this.card["setName"] !== null }
 	get hasCards() { return this.card["foils"] !== null || this.card["normals"] !== null }
 
-	get foils() { return this.card.foils }
-	set foils(v) { this.card.foils = (v < 0) ? 0 : v; this.$emit("update", this.card) }
-
-	get normals() { return this.card.normals }
-	set normals(v) { this.card.normals = (v < 0) ? 0 : v; this.$emit("update", this.card) }
+	UpdateCard() {
+		this.card.foils = this.foils
+		this.card.normals = this.normals
+		this.$emit("updated", this.card)
+	}
 }
 </script>
 
